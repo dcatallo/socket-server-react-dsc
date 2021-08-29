@@ -8,10 +8,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 </head>
 <body>
-    <h1 clase="mt-5">MiniChat</h1>
+    <h1 clase="mt-5">Acceso denegado</h1>
     <hr>
 
-    <form id="myForm">        
+    <!--<form id="myForm">        
         <div class="row">
             <div class="col-8">
                 <input type="text" id="txtMessage" placeholder="Mensaje" class="form-control"/>
@@ -30,14 +30,16 @@
             <ul id="myMessages">                
             </ul>
         </div>
-    </div>
+    </div>-->
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.3/socket.io.js" integrity="sha512-PU5S6BA03fRv1Q5fpwXjg5nlRrgdoguZ74urFInkbABMCENyx5oP3hrDzYMMPh3qdLdknIvrGj3yqZ4JuU7Nag==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
         const socket = io('https://react-socket-server-dsc.herokuapp.com/')
+        //const socket = io('http://localhost:3001')
+
         // Referencias al DOM
-        const form = document.querySelector('#myForm');
+        /*const form = document.querySelector('#myForm');
         const messages = document.querySelector('#myMessages');
         const message = document.querySelector('#txtMessage');
 
@@ -52,7 +54,7 @@
 
         socket.on('message-from-server', (data) => {
             messages.innerHTML += `<li>${data.text}</li>`;
-        })
+        })*/
         
 
         /*socket.on('mensaje-bienvenida', (data) => {
